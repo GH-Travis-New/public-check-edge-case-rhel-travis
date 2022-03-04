@@ -1,0 +1,11 @@
+os: RHEL
+dist: rhel8
+language: go
+arch: amd64
+before_script:
+  - yum install vim-enhanced -y
+addons:
+  yum:
+    - vsftpd
+script:
+  - go run hello_world.go
