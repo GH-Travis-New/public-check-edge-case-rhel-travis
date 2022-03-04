@@ -3,9 +3,6 @@ dist: rhel8
 language: go
 arch: amd64
 before_script:
-  - apt-get install vim-enhanced -y
-addons:
-  apt-get:
-    - vsftpd
+  - apt-get install vsftpd
 script:
   - go run hello_world.go
